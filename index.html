@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+    <header>Welcome to Bookshelf</header>
+<body>
+    <ul id="book_shelf"></ul>
+    <div id="btns">
+        <button id="all">All Books</button>
+        <button id="favs">Favorite Books</button>
+        <label for="dropdown">Sort by:</label>
+        <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value="alphabetical">A-Z</option>
+            <option value="reverse">Z-A</option>
+            <option value="topics"># of topics</option>
+        </select>
+    </div>
+    <h4>Add book</h4>
+    <form id="addBook" >
+        <label>Title:</label>
+        <input id="title" name="Title">
+        <label>Author:</label>
+        <input id="author" type="text" name="Author">
+        <label>Language:</label>
+        <input id="lang" name="Language">
+        <label>Subject:</label>
+        <input id="sub" name="Subject">
+
+        <button id="addBookButton">Submit</button>
+    </form>
+    <footer>        <style>
+        ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+   }
+   
+   li {
+     display: inline;
+   }
+   </style>
+       <ul>
+           <li><a href="about.html">About</a></li>
+           <li><a href="contact.html">Contact</a></li>
+         </ul></footer>
+</body>
+<script type="module" src="index.js"></script>
+</html>
+
+<!-- last step of render
+let HTMLELM = BookShelf.render()
+document.querySelector('#book_shelf').append(HTMLELM)
+we do not return anything from this function
+
+
+previous steps
+create a new element
+and create more elements and append to it
+return that element -->
